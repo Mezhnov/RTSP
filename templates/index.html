@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стриминг</title>
+</head>
+<body>
+    <h1>Стриминг</h1>
+    <form action="{{ url_for('video_feed') }}" method="post">
+        <label for="rtsp_url">RTSP URL:</label><br>
+        <input type="text" id="rtsp_url" name="rtsp_url"><br>
+        <input type="submit" value="Start Streaming">
+    </form>
+</body>
+</html>
